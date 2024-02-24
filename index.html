@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/style.css">
     <script src="https://kit.fontawesome.com/952bfdac73.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Dev Barber - Sua barbearia!</title>
 </head>
 
@@ -19,7 +21,7 @@
 
             <nav class="header-content container">
 
-                <div class="header-icons">
+                <div class="header-icons" data-aos="fade-down">
 
                     <a href="#">
 
@@ -39,20 +41,22 @@
 
                     </a>
                 </div>
-                <div class="header-logo">
-                    <img src="./src/img/logo.svg" alt="Logo da Barbearia">
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+                    <img src="./src/img/logo.svg" alt="Logo da Barbearia"
+                    data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500"
+                    >
                 </div>
 
-                <div>
-                    <a href="#" class="header-button">Agendar horário</a>
+                <div data-aos="fade-down">
+                    <a href="https://api.whatsapp.com/send?phone=83991669001&text=Ola%20gostaria%20de%20fazer%20um%20agendamento" target="_blank" class="header-button">Agendar horário</a>
                 </div>
 
             </nav>
 
-            <main class="hero container">
+            <main class="hero container" data-aos="fade-up" data-aos-delay="400">
                 <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE</h1>
                 <P>Horário de funcionamento: 9:00 - 19:00</P>
-                <a href="#" class="button-contact" target="_blank">Agendar horário</a>
+                <a href="https://api.whatsapp.com/send?phone=83991669001&text=Ola%20gostaria%20de%20fazer%20um%20agendamento" class="button-contact" target="_blank">Agendar horário</a>
 
             </main>
 
@@ -67,11 +71,11 @@
 
     <section class="about">
         <div class="container about-content">
-            <div>
+            <div data-aos="zoom-in" data-aos-delay="100">
                 <img src="./src/img/images.svg" alt="imagens sobre a barbearia">
             </div>
 
-            <div class="about-description">
+            <div class="about-description" data-aos="zoom-out-left" data-aos-delay="250">
                 <h2>Sobre</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facere reprehenderit dolores
                     architecto? Ex, ab molestias quos dolor et, distinctio voluptatibus accusantium voluptate culpa
@@ -97,7 +101,7 @@
 
         <section class="haircuts">
 
-            <div class="haircut">
+            <div class="haircut" data-aos="fade-up" data-aos-delay="250">
                 <img src="/src/img/corte1.png" alt="corte de cabelo">
 
 
@@ -109,7 +113,7 @@
 
             </div>
 
-            <div class="haircut">
+            <div class="haircut" data-aos="fade-up" data-aos-delay="350">
                 <img src="/src/img/corte2.png" alt="Barba completa">
 
 
@@ -122,7 +126,7 @@
             </div>
 
 
-            <div class="haircut">
+            <div class="haircut" data-aos="fade-up" data-aos-delay="450">
                 <img src="/src/img/corte3.png" alt="corte e barba">
 
 
@@ -178,9 +182,13 @@
             <p>Copyright 2023 | Dev Barbearia - Todos os direitos reservados.</p>
         </footer>
         <!-- Button Whatsapp -->
-        <a href="#">
+        <a href="https://api.whatsapp.com/send?phone=83991669001&text=Ola%20gostaria%20de%20fazer%20um%20agendamento" 
+        class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
             <img src="./src/img/whatssapp.svg" alt="Botão whatsapp">
+            <span class="tooltip-text">Agende seu horário</span>
         </a>
+
+        <script src="./src/js/script.js"></script>
 </body>
 
 </html>
